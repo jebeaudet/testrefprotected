@@ -1,0 +1,14 @@
+name: TESTJACK
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-jack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: testjack
+        shell: bash
+        run: echo $GITHUB_REF_PROTECTED
